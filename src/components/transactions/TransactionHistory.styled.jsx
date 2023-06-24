@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 export const Table = styled.table`
   margin: 0 auto;
   padding: 4px;
-  width: 90%;
+  width: 360px;
   box-shadow: -0.0625rem -0.0625rem 0.0625rem #fff,
     0.0625rem 0.0625rem 0.0625rem #babecc;
 `;
@@ -24,3 +24,8 @@ export const Tr = styled.tr`
   text-shadow: 0.0625rem 0.0625rem 0.0625rem #400075;
 `;
 export const Th = styled.th``;
+
+export const Tbody = styled.tbody`
+  height: 240px;
+  width: 240px;
+`;

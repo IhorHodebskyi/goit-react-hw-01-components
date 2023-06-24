@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 
 export const Tr = styled.tr`
+  text-align: center;
   :nth-of-type(even) {
     background-color: #d6eeee;
   }
