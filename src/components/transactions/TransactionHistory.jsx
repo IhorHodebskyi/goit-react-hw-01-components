@@ -1,16 +1,16 @@
 import PropTypes from 'prop-types';
-
+import { Table, Thead, Tr, Th } from './TransactionHistory.styled';
 import TransactionHistoryTr from './TransactionHistoryTr';
 function TransactionHistory({ items }) {
   return (
-    <table>
-      <thead>
-        <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
-        </tr>
-      </thead>
+    <Table>
+      <Thead>
+        <Tr>
+          <Th>Type</Th>
+          <Th>Amount</Th>
+          <Th>Currency</Th>
+        </Tr>
+      </Thead>
 
       <tbody>
         {items.map(({ currency, amount, type, id }) => (
@@ -22,10 +22,19 @@ function TransactionHistory({ items }) {
           />
         ))}
       </tbody>
-    </table>
+    </Table>
   );
 }
 
 export default TransactionHistory;
 
-TransactionHistory.propTypes = {};
+TransactionHistory.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.exact({
+      currency: PropTypes.string,
+      amount: PropTypes.string,
+      type: PropTypes.string,
+      id: PropTypes.string,
+    })
+  ),
+};

@@ -6,7 +6,7 @@ import {
   StatItem,
   Label,
   Percentage,
-} from './Statistics.staylad';
+} from './Statistics.styled';
 function Statistics({ stats, title }) {
   return (
     <Section className="statistics">

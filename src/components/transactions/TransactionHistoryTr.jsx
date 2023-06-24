@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
-
+import { Tr, Td } from './TransactionHistoryTr.styled';
 function TransactionHistoryTr({ currency, amount, type, id }) {
   return (
-    <tr key={id}>
-      <td>{type}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
-    </tr>
+    <Tr key={id}>
+      <Td>{type}</Td>
+      <Td>{amount}</Td>
+      <Td>{currency}</Td>
+    </Tr>
   );
 }
 

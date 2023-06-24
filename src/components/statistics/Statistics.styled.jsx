@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { getRandomHexColor } from 'utils/getRandomHexColor';
+import { getRandomColor } from 'utils/getRandomColor';
 
 export const Section = styled.section`
   display: flex;
@@ -32,13 +32,13 @@ export const StatItem = styled.li`
   width: 100%;
   height: 100%;
   text-shadow: 0 0 1px #000;
-  background-color: ${props => getRandomHexColor(props.index)};
+  background-color: ${props => getRandomColor(props.index)};
 `;
-export const Label = styled.li`
+export const Label = styled.p`
   font-size: 0.8rem;
   color: #fff;
 `;
-export const Percentage = styled.li`
+export const Percentage = styled.p`
   font-size: 1.2rem;
   color: #fff;
 `;
